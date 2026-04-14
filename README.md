@@ -1,89 +1,112 @@
-<p align="center" style="color:grey">
-
-![wave](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Nikhil%20Singh&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Welcome%20to%20my%20GitHub%20Profile!&descAlignY=51&descAlign=62)
-
-<div align="center" style="font-size: 16px;text-align: center;font-weight:bold;color:#ffffff99;">
-<table>
-<tbody>
-<td align="center">
-<img width="2000" height="0"><br>
-
-![Stat Graph](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=niksingh710&theme=dracula)
-
-I have spent all my time working on system software <br> From the guts of the kernel to client-code on the browser and much in between.
-
-[![My GitHub Repositories](https://img.shields.io/badge/My%20GitHub%20Repositories-See%20them%20all-black?style=for-the-badge&logo=github)](https://github.com/niksingh710?tab=repositories)
-<img width="2000" height="0">
-
-</td>
-</tbody>
-</table>
-</div>
-</p>
-
-
-<table>
-<tbody>
-<td align="center" style="vertical-align: middle;">
-
-![Nothing](./nothing.gif)
-
-</td>
-<td align="center" style="vertical-align: middle;">
-
-![Github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=niksingh710&show_icons=true&layout=compact&langs_count=16&theme=dracula&hidden_border=true)
-
-</td>
-</tbody>
-</table>
-
-<div align="center" style="font-size: 16px;text-align: center;font-weight:bold;color:#ffffff99;">
-<table>
-<tbody>
-<td align="center">
-<img width="2000" height="0"><br>
-
-<small style="font-weight:bold;text-align: center;background: #00000073">
-<small>
-
-I'm a dedicated software developer with a passion for crafting efficient systems and solving complex problems. By day, I specialize in developing robust software solutions, leveraging my expertise in Linux and Vim to streamline workflows and maximize productivity.
-Beyond coding, I find solace in the harmonies of music and the elegance of mathematics and physics, which inspire my creativity and provide a unique perspective on the world.
-Currently, I'm deeply immersed in exciting projects, harnessing the power of Rust while continuing to master the Linux command line with Vim as my trusted companion.
-
-</small>
-</small>
-
 <div align="center">
 
-[![Telegram](https://img.shields.io/badge/-Telegram-blue?style=flat-square&logo=telegram&logoColor=white&link=https://t.me/niksingh710/)](https://t.me/niksingh710/)
-[![Matrix](https://img.shields.io/badge/-Matrix-black?style=flat-square&logo=matrix&logoColor=white&link=https://matrix.to/#/@niksingh710:matrix.org)](https://matrix.to/#/@niksingh710:matrix.org)
-[![Twitter](https://img.shields.io/badge/-Twitter-blue?style=flat-square&logo=twitter&logoColor=white&link=https://twitter.com/niksingh710/)](https://twitter.com/niksingh710/)
-[![Reddit Karma](https://img.shields.io/reddit/user-karma/combined/niksingh710?label=karma&logo=reddit)](https://reddit.com/u/niksingh710)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/niksingh710/)](https://www.linkedin.com/in/niksingh710/)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&text=Nikhil%20Singh&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Systems%20Engineer%20|%20Linux%20Enthusiast%20|%20Open%20Source%20Contributor&descAlignY=55&descAlign=62)
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nik.singh710@gmail.com)
-
-</div>
-
-<img width="2000" height="0">
-
-</td>
-</tbody>
-</table>
 </div>
 
 <div align="center">
 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&random=false&width=600&lines=Building+high-performance+systems;NixOS+%7C+Rust+%7C+Linux+Kernel;AI-First+Development+Advocate)](https://git.io/typing-svg)
 
-![Tools](https://skillicons.dev/icons?i=bash,linux,git,vim,neovim&theme=dark)
+</div>
 
-![language](https://skillicons.dev/icons?i=rust,go,lua)
-![language](https://skillicons.dev/icons?i=java,cpp,c,python,dart&theme=dark)
+---
 
-![fromtend](https://skillicons.dev/icons?i=html,css,javascript&theme=dark)
-![frameworks](https://skillicons.dev/icons?i=svelte,express,nodejs,flutter&theme=dark)
-![database](https://skillicons.dev/icons?i=mysql,mongo&theme=dark)
+<div align="center">
 
-![Visitors](https://profile-counter.glitch.me/niksingh710/count.svg)
+### 🚀 Current Focus
+
+<img src="https://skillicons.dev/icons?i=rust,nix,go,kubernetes,aws,redis,kafka&theme=dark" />
+
+</div>
+
+---
+
+<div align="center">
+
+### 💻 Tech Stack
+
+**Languages & Runtimes**
+<br>
+<img src="https://skillicons.dev/icons?i=rust,go,java,python,nix,bash,js,ts,cpp,haskell&theme=dark" />
+
+**Infrastructure & DevOps**
+<br>
+<img src="https://skillicons.dev/icons?i=linux,nix,docker,kubernetes,aws,gcp,jenkins,githubactions&theme=dark" />
+
+**Databases & Messaging**
+<br>
+<img src="https://skillicons.dev/icons?i=redis,mysql,mongodb,kafka&theme=dark" />
+
+**Backend & Frameworks**
+<br>
+<img src="https://skillicons.dev/icons?i=nodejs,django,fastapi,flask,actix&theme=dark" />
+
+**Developer Tools**
+<br>
+<img src="https://skillicons.dev/icons?i=git,neovim,tmux,vscode&theme=dark" />
+
+</div>
+
+---
+
+<div align="center">
+
+### 📊 GitHub Activity
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=semi710&theme=dracula&hide_border=true&border_radius=8&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
+
+<br>
+
+![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=semi710&theme=dracula)
+
+</div>
+
+---
+
+<div align="center">
+
+### 🏆 Achievements
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=semi710&theme=dracula&no-frame=true&no-bg=false&margin-w=4)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+---
+
+<div align="center">
+
+### 🔗 Connect With Me
+
+<a href="mailto:nik.singh710@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://linkedin.com/in/niksingh710"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://github.com/semi710?tab=repositories"><img src="https://img.shields.io/badge/Portfolio-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+
+<br>
+
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/niksingh710)
+[![Matrix](https://img.shields.io/badge/Matrix-000000?style=for-the-badge&logo=matrix&logoColor=white)](https://matrix.to/#/@niksingh710:matrix.org)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/niksingh710)
+[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://reddit.com/u/niksingh710)
+
+</div>
+
+---
+
+<div align="center">
+
+### 👀 Profile Views
+
+![Visitors](https://profile-counter.glitch.me/semi710/count.svg)
+
+</div>
+
+<div align="center">
+
+---
+
+<p><i>"From the kernel to the browser - I live in the terminal."</i></p>
+
+<p>Keyboard > Mouse = Productivity</p>
 
 </div>

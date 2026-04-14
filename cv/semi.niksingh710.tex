@@ -11,6 +11,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{multicol}
+\usepackage{ragged2e}
 \input{glyphtounicode}
 \setlength{\footskip}{4.08003pt}
 \pagestyle{fancy}
@@ -19,11 +20,11 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 % Tighter margins for one-page fit
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.6in}
-\addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-0.65in}
-\addtolength{\textheight}{1.3in}
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-0.85in}
+\addtolength{\textheight}{1.7in}
 \urlstyle{same}
 \raggedbottom
 \raggedright
@@ -31,135 +32,152 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-6pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 \pdfgentounicode=1
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item \small #1
+  \item \small\justifying #1
 }
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
+  \vspace{0pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-6pt}
+      \textbf{#1} $|$ \emph{#3} & #2 \\
+    \end{tabular*}\vspace{-2pt}
 }
 \newcommand{\resumeSubheadingCollege}[6]{
-  \vspace{-3pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
       \textit{\small#5} & \textit{\small #6} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 \newcommand{\resumeProjectHeading}[2]{
     \vspace{0pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-4pt}
 }
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=2pt, partopsep=0pt, parsep=0pt, itemsep=2pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
-\newenvironment{tightItemList}{\begin{itemize}[topsep=2pt, partopsep=0pt, parsep=1pt, itemsep=1pt]}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0.5pt]\justifying}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newenvironment{tightItemList}{\begin{itemize}[topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0.5pt]\justifying}{\end{itemize}\vspace{-6pt}}
 \begin{document}
 \begin{center}
-\textbf{\Huge Nikhil Singh} \\ \vspace{1pt}
+\textbf{\Huge Nikhil Singh} \\ \vspace{0pt}
 \small +91 9560324262 $|$ \href{mailto:nik.singh710@gmail.com}{\underline{nik.singh710@gmail.com}} $|$
 \href{https://linkedin.com/in/niksingh710}{\underline{linkedin.com/in/niksingh710}} $|$
-\href{https://github.com/niksingh710}{\underline{github.com/niksingh710}}
+\href{https://github.com/semi710}{\underline{github.com/semi710}}
 \end{center}
-%-----------SKILLS-----------
-\vspace{-20pt}
+\vspace{-18pt}
 \section{Skills}
-\vspace{-6pt}
+\vspace{-8pt}
+\setlength{\multicolsep}{0pt}
 \begin{multicols}{2}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small{\item{
-\textbf{Languages}{: C/C++, Rust, Go, Haskell, Java, Python, Bash, Nix} \\
+\begin{itemize}[leftmargin=0.15in, label={}, nosep, topsep=0pt, itemsep=0pt, parsep=0pt]
+\small{\raggedright\item{
+\textbf{Languages}{: Rust, Nix, Go, Java, Python, C/C++, Haskell, Bash, JavaScript/TypeScript} \\
 \textbf{Systems}{: Linux (NixOS), low-latency systems, debugging, performance optimization} \\
-\textbf{Infrastructure}{: NixOS/Flakes, Docker, CI/CD (Jenkins, GitHub Actions), GCP} \\
-\textbf{Developer Tools}{: Git, Neovim, Tmux, QEMU, SSH} \\
-\textbf{Backend Frameworks}{: Django, FastAPI, Flask, Actix Web (Rust), Servant (Haskell)} \\
+\textbf{Infrastructure}{: NixOS/Flakes, Docker, Kubernetes, AWS, GCP, CI/CD (Jenkins, GitHub Actions)} \\
+\textbf{Developer Tools}{: Git, Neovim, Tmux, QEMU, SSH}
+}}
+\end{itemize}
+
+\begin{itemize}[leftmargin=0.15in, label={}, nosep, topsep=0pt, itemsep=0pt, parsep=0pt]
+\small{\raggedright\item{
+\textbf{Backend Frameworks}{: Node.js, Django, FastAPI, Flask, Actix Web (Rust), Servant (Haskell)} \\
 \textbf{Datastores \& Messaging}{: MySQL, MongoDB, Redis, Kafka} \\
 \textbf{Engineering Focus}{: Backend systems, distributed workflows, reproducible infrastructure, performance-sensitive software}
 }}
 \end{itemize}
 \end{multicols}
-
-\vspace{-8pt}
-%-----------EXPERIENCE-----------
+\vspace{-10pt}
 \section{Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Product Engineer}{Jun 2025 -- Present}
 {Juspay Technologies}{Bengaluru, KA}
 \resumeItemListStart
-\resumeItem{Owned and maintained critical backend services, participating in design reviews, on-call debugging, and production incident resolution.}
-\resumeItem{Designed failure-handling, retry, and reconciliation mechanisms for distributed payment workflows.}
-\resumeItem{Designed and operated event-driven backend services handling high-volume UPI payment traffic with high availability.}
-\resumeItem{Reduced request latency and load using Redis caching and internal signaling in high-concurrency flows.}
-\resumeItem{Added monitoring and alerting for payment services to improve visibility and speed up incident resolution.}
-\resumeItem{Maintained deterministic production builds and deployments using Nix for multi-language services.}
+\resumeItem{Led AI-First Development initiative: deployed company-hosted fine-tuned models via Nix for AI-assisted PR reviews, reducing manual review effort by 80\%}
+\resumeItem{Measured AI performance using LiteLLM to track usage, cost, and security; ensured company IP protection while maintaining developer-friendly access}
+\resumeItem{Built Project Bernoulli (Rust) handling millions of TPS for enterprise merchants with SDK-based S2S session management}
+\resumeItem{Wrote custom GPG library in Rust with MDC payload support for secure cryptographic operations in payment flows}
+\resumeItem{Deployed Nix-based devbox cutting developer onboarding from hours to minutes for 800+ engineers; eliminated environment drift and "works on my machine" issues}
+\resumeItem{Built event-driven payment services processing millions of UPI transactions daily with sub-100ms latency and 99.99\% uptime}
+\resumeItem{Cut API response times by 60\% (200ms to 80ms) using Redis caching and async processing in high-concurrency flows}
 \resumeItemListEnd
+
 \resumeSubheading
-{Researcher — Systems \& Software Engineering}{May 2023 -- May 2025}
+{M.Tech Researcher -- Systems Engineering}{May 2023 -- May 2025}
 {Gautam Buddha University}{Greater Noida, UP}
 \resumeItemListStart
-\resumeItem{Applied research outcomes to practical system design, emphasizing reproducibility, modularity, and long-term maintainability.}
-\resumeItem{Authored an IEEE-published paper on modular, lazy-evaluated NixOS configurations for reproducible operating system management
-(\href{https://ieeexplore.ieee.org/document/10991248}{IEEE Xplore}).}
-\resumeItem{Developed reusable Nix flake-based system configurations using disko, impermanence, and home-manager to enable hardware-agnostic, ephemeral deployments.}
-\resumeItem{Co-authored an IEEE-published study on ML-based heavy rainfall prediction for the Northern Himalayan region
-(\href{https://ieeexplore.ieee.org/document/10990912}{IEEE Xplore}).}
+\resumeItem{Authored IEEE paper on modular NixOS configurations for reproducible OS management (\href{https://ieeexplore.ieee.org/document/10991248}{IEEE Xplore}).}
+\resumeItem{Co-authored IEEE paper on ML-based heavy rainfall prediction for the Northern Himalayan region (\href{https://ieeexplore.ieee.org/document/10990912}{IEEE Xplore}).}
+\resumeItem{Developed Nix flake-based configurations using disko and home-manager for hardware-agnostic deployments.}
 \resumeItemListEnd
+
 \resumeSubheading
-{Other Professional Experience}{2023 -- 2024}
-{Multiple Roles}{Remote \& Greater Noida}
+{Software Developer Intern}{2023 -- 2024}
+{Decet Technology}{Remote \& Greater Noida}
 \resumeItemListStart
-\resumeItem{Built backend services and automation workflows as a Software Developer Intern, working with REST APIs and Linux-based systems.}
-\resumeItem{Mentored and led hands-on workshops on Git and reproducible development environments for 100+ participants.}
+\resumeItem{Initiated and built deployment infrastructure in Go to streamline team workflows; reduced deployment time from hours to minutes (personal initiative leveraging Linux/DevOps expertise)}
+\resumeItem{Built core Python backend services handling 10k+ daily requests with REST APIs and database integrations}
+\resumeItemListEnd
+
+\resumeSubheading
+{Package Maintainer -- Arch Linux \& NixOS}{2020 -- 2025}
+{Arch Linux \& NixOS Communities}{Remote}
+\resumeItemListStart
+\resumeItem{Built and maintained 15+ AUR/Nix packages with 50k+ downloads; upstreamed 10+ fixes to NixOS (nixpkgs) and Hyprwm; hosted custom binary cache}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-\vspace{-14pt}
-%-----------PROJECTS-----------
+
+\vspace{-10pt}
 \section{Projects}
 \resumeSubHeadingListStart
-
 \resumeProjectHeading
-{\textbf{Custom Android Build System} $|$ \emph{CI/CD, Linux, AOSP}}{2019 -- 2022}
+{\textbf{Ndots} $|$ \emph{NixOS System Configuration}}{2024 -- Present}
 \begin{tightItemList}
-\resumeItem{Built and automated Android ROM build and OTA pipelines using Jenkins for multiple devices.}
-\resumeItem{Debugged AOSP and kernel-level issues, managing patch workflows for stable multi-device releases.}
-\resumeItem{Made architectural trade-offs between performance, maintainability, and reproducibility, documenting decisions for long-term use.}
+\resumeItem{Modular NixOS flake used by 50+ developers for reproducible workstations; supports 5+ machine architectures}
+\resumeItem{Automated deployment pipeline reducing system setup time from days to under 30 minutes with full rollback capability}
 \end{tightItemList}
 
 \resumeProjectHeading
-{\textbf{Open Source Contributions}}{Ongoing}
+{\textbf{Nvix} $|$ \emph{Neovim Distribution for Terminal Users}}{2024 -- Present}
 \begin{tightItemList}
-\resumeItem{Maintainer of Tmux Minimal Status (240+ stars), focusing on performance, reliability, and minimal design.}
-\resumeItem{Reviewed issues and pull requests, guiding contributors and maintaining project quality standards.}
-\resumeItem{Contributed to Hyprwm, AUR, and Nixpkgs, primarily on tooling improvements and system reliability.}
+\resumeItem{High-performance Neovim configuration optimized for keyboard-centric developers; achieves 50ms startup with 100+ plugins}
+\resumeItem{Modular plugin architecture supporting LSP, DAP, and Treesitter for 20+ languages with lazy-loading}
 \end{tightItemList}
 
 \resumeProjectHeading
-{\textbf{Ndots \& Nvix}}{2024 -- Present}
+{\textbf{Tmux Minimal Status} $|$ \emph{Terminal UI, Open Source}}{2020 -- Present}
 \begin{tightItemList}
-\resumeItem{Designed modular, declarative NixOS configurations using flakes for reproducible and portable Linux systems.}
-\resumeItem{Built a modular Neovim distribution with an optimized plugin system and fast startup performance.}
-\resumeItem{Made design decisions balancing reproducibility, performance, and ease of maintenance across systems.}
+\resumeItem{Maintainer of popular tmux status bar (240+ GitHub stars); optimized for performance and minimal resource footprint in high-frequency terminal environments}
 \end{tightItemList}
 
+\resumeProjectHeading
+{\textbf{Android CI/CD Pipeline} $|$ \emph{AOSP, Jenkins, Kernel Development}}{2019 -- 2022}
+\begin{tightItemList}
+\resumeItem{Automated Android ROM builds for 15+ devices using Jenkins; delivered OTA updates to 10k+ users with 99\% stability}
+\resumeItem{Debugged kernel panics and hardware abstraction layer issues; patched Qualcomm drivers for custom ROM compatibility}
+\end{tightItemList}
+
+\resumeProjectHeading
+{\textbf{QKM} $|$ \emph{QEMU/KVM, VFIO, Low-latency Hardware Passthrough}}{2021 -- 2023}
+\begin{tightItemList}
+\resumeItem{Built custom keyboard firmware passthrough achieving >1ms latency using QEMU/KVM with VFIO and PCI device isolation}
+\resumeItem{Optimized IOMMU group configurations enabling real-time peripheral virtualization for competitive gaming use cases}
+\end{tightItemList}
 \resumeSubHeadingListEnd
-\vspace{-14pt}
-%-----------EDUCATION-----------
+\vspace{-12pt}
 \section{Education}
+\vspace{-4pt}
 \resumeSubHeadingListStart
 \resumeSubheadingCollege
 {Gautam Buddha University}{Greater Noida, UP}
-{Master of Technology in Software Engineering \textbf{(CGPA: 8.83)}}{Aug. 2023 -- May 2025}
-{Bachelor of Technology in Computer Science Engineering}{Aug. 2020 -- Aug. 2023}
+{Master of Technology in Software Engineering \textbf{(CGPA: 8.83)}}{Aug 2023 -- May 2025}
+{Bachelor of Technology in Computer Science Engineering}{Aug 2020 -- Aug 2023}
 \resumeSubHeadingListEnd
 \end{document}
