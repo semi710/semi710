@@ -3,13 +3,15 @@
 │                                                              │
 │                      NIKHIL SINGH                            │
 │                                                              │
-│              Systems Engineer  •  Linux Wizard               │
+│              Systems Engineer  •  semi.sh                    │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 
 $ whoami
   Systems engineer shipping high-performance infrastructure.
   Currently playing with: Rust, NixOS, and AI-assisted workflows.
+  
+  Portfolio: https://semi.sh
 
 $ cat ~/projects/active
   Ndots - NixOS configs used by 50+ developers
