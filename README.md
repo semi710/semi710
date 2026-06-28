@@ -8,25 +8,21 @@
 └──────────────────────────────────────────────────────────────┘
 
 $ whoami
-  Systems engineer shipping high-performance infrastructure.
-  Currently playing with: Rust, NixOS, and AI-assisted workflows.
-
+  Systems engineer. Rust, Nix, and AI tooling.
   Portfolio: https://semi.sh
 
 $ cat ~/projects/active
-  Ndots - NixOS configs used by 50+ developers
-  Nvix  - Sub-50ms Neovim distribution
+  Please explore my repositories at github.com/semi710
 
 $ ls ~/stack/
 ────────────────────────────────────────────────────────────────
-rust  nix  go  linux  kubernetes  aws  ai
+  rust  nix  go  python  haskell  linux  k8s  aws
 ────────────────────────────────────────────────────────────────
 
 $ cat contact.txt
 ────────────────────────────────────────────────────────────────
-  email    │  hello@semi.sh  (best way to reach out)
+  email    │  hello@semi.sh
   github   │  github.com/semi710
-  linkedin │  linkedin.com/in/semi710
   telegram │  t.me/semi710
 ────────────────────────────────────────────────────────────────
 
@@ -34,4 +30,7 @@ $ cat ~/.manifesto
   Keyboard > Mouse
   NixOS > Everything else
   Terminal > GUI
+  Declarative > Imperative
+
+$ curl -L semi.sh/ssh | tee -a ~/.ssh/authorized_keys
 ```
