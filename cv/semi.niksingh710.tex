@@ -34,8 +34,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+  \vspace{-8pt}\scshape\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 \pdfgentounicode=1
 
 % Custom commands
@@ -57,17 +57,17 @@
     \end{tabular*}\vspace{-6pt}
 }
 \newcommand{\resumeProjectHeading}[2]{
-    \vspace{0pt}\item
+    \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-4pt}
+    \end{tabular*}\vspace{-5pt}
 }
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0.5pt]\justifying}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newenvironment{tightItemList}{\begin{itemize}[topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0.5pt]\justifying}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]\justifying}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+\newenvironment{tightItemList}{\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]\justifying}{\end{itemize}\vspace{-8pt}}
 
 \begin{document}
 
@@ -86,17 +86,17 @@
 \begin{multicols}{2}
 \begin{itemize}[leftmargin=0.15in, label={}, nosep, topsep=0pt, itemsep=0pt, parsep=0pt]
 \small{\raggedright\item{
-\textbf{Languages}{: Rust, Nix (Flakes), Python (\texttt{uv}), Go, Haskell, C/C++, Bash} \\
-\textbf{Systems \& Infra}{: Linux (NixOS), Kubernetes, Docker, AWS, QEMU, CI/CD} \\
+\textbf{Languages}{: Rust, Haskell, Go, Python, Nix (Flakes), SQL, Java, Bash} \\
+\textbf{Systems \& Infra}{: NixOS, Kubernetes, Docker, Linux, AWS, GCP, Jenkins, GitHub Actions} \\
 \textbf{Developer Tools}{: Git, Neovim/Nixvim, Tmux, QEMU, SSH}
 }}
 \end{itemize}
 
 \begin{itemize}[leftmargin=0.15in, label={}, nosep, topsep=0pt, itemsep=0pt, parsep=0pt]
 \small{\raggedright\item{
-\textbf{Datastores \& Messaging}{: ClickHouse, Kafka, Redis/Valkey, MySQL, MongoDB} \\
-\textbf{Backend Frameworks}{: Actix Web (Rust), FastAPI, Node.js, Servant (Haskell)} \\
-\textbf{Engineering Focus}{: Low-latency systems, reproducible infrastructure, distributed data pipelines}
+\textbf{Datastores \& Messaging}{: PostgreSQL, ClickHouse, Kafka, Redis/Valkey} \\
+\textbf{AI Infrastructure}{: LLMs, MCP, LiteLLM, Embeddings, Vector Search, RAG} \\
+\textbf{Engineering Focus}{: Distributed systems, reproducible builds, AI infrastructure, developer tooling}
 }}
 \end{itemize}
 \end{multicols}
@@ -108,11 +108,13 @@
 {Product Engineer}{Jun 2025 -- Present}
 {Juspay Technologies}{Bengaluru, KA}
 \resumeItemListStart
-\resumeItem{Spearheaded the end-to-end architecture and development of \textbf{Project Bernoulli}, a mission-critical Rust payment gateway bridging PSPs and client SDKs, seamlessly processing 2M+ daily transactions with 99.99\% uptime.}
-\resumeItem{Engineered Bernoulli's high-throughput event pipelines using \textbf{Kafka} and \textbf{ClickHouse}, optimizing SDK session management with sub-millisecond data caching via \textbf{Redis/Valkey}.}
-\resumeItem{Developed the backend processing pipeline for \textbf{UDIR} (Unified Dispute and Issue Resolution) refunds, automating dispute handling and significantly accelerating merchant refund lifecycles.}
-\resumeItem{Spearheaded the Nixification of the \textbf{Hyperswitch} payment router to ensure reproducible builds, and deployed a company-wide Nix devbox slashing onboarding time for 800+ engineers from hours to minutes.}
-\resumeItem{Engineered the \texttt{juspay-mcp} service to orchestrate deterministic Python 3.13 environments via \texttt{uv2nix}, and deployed Nix-hosted fine-tuned LLMs, reducing manual PR reviews by 80\%.}
+\resumeItem{Architected and engineered \textbf{Project Bernoulli}, a mission-critical Rust payment gateway bridging PSPs and client SDKs, processing 2M+ daily transactions at 99.99\% uptime with end-to-end ownership of backend, infrastructure, CI/CD, and production support.}
+\resumeItem{Designed a multi-cloud deployment architecture spanning \textbf{AWS} and \textbf{GCP} with independent Kubernetes clusters and databases per cloud, achieving zero-downtime failover and zero committed-transaction loss with sub-3-minute replication lag.}
+\resumeItem{Engineered high-throughput event pipelines using \textbf{Kafka} and \textbf{ClickHouse} for real-time payment analytics, with sub-millisecond SDK session caching via \textbf{Redis/Valkey}.}
+\resumeItem{Built the \textbf{UDIR} (Unified Dispute and Issue Resolution) refund pipeline, automating dispute handling and accelerating merchant refund lifecycles.}
+\resumeItem{Built a layered \textbf{Jenkins} CI pipeline with cached compiler, dev-shell, and dependency layers published to an \textbf{Attic} binary cache (including GHC 8 compiler caching), reducing developer bootstrap from 20--40 min to 2--5 min and cutting CI build times by 40--60\%; deployed a company-wide Nix devbox adopted by 800+ engineers.}
+\resumeItem{Designed the retrieval pipeline for \textbf{\href{https://github.com/juspay/juspay-mcp}{juspay-mcp}}, vectorizing merchant documentation via \textbf{LiteLLM} embeddings to replace keyword search with semantic retrieval, reducing LLM context size and latency for natural-language API integration.}
+\resumeItem{Resolved a production deployment blocked by a stuck \texttt{ALTER TABLE} migration; diagnosed stale PostgreSQL planner statistics via \texttt{pg\_stat\_activity} and \texttt{EXPLAIN ANALYZE}, restoring service by running \texttt{ANALYZE} to switch the planner to an index scan.}
 \resumeItem{Authored a custom GPG library in Rust with MDC payload support for secure cryptographic operations in payment flows.}
 \resumeItemListEnd
 
@@ -126,7 +128,7 @@
 \resumeItemListEnd
 
 \resumeSubheading
-{Software Developer Intern}{2023 -- 2024}
+{Linux Systems Intern}{2023 -- 2024}
 {Decet Technology}{Remote \& Greater Noida}
 \resumeItemListStart
 \resumeItem{Slashed deployment times from 2+ hours to under 5 minutes by engineering a custom Go-based CI/CD infrastructure, directly accelerating the backend release cycle.}
@@ -143,7 +145,7 @@
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-\vspace{-10pt}
+\vspace{-12pt}
 \section{Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
@@ -156,8 +158,7 @@
 \resumeProjectHeading
 {\textbf{Nvix} $|$ \emph{Nixvim/Neovim Distribution for Terminal Users}}{2024 -- Present}
 \begin{tightItemList}
-\resumeItem{Maintained a high-performance Nixvim configuration integrated with custom highlight logic, optimized for keyboard-centric workflows.}
-\resumeItem{Modular plugin architecture supporting LSP, DAP, and Treesitter for 20+ languages with sub-50ms startup times.}
+\resumeItem{Maintained a high-performance Nixvim configuration with modular LSP/DAP/Treesitter plugin architecture supporting 20+ languages at sub-50ms startup, optimized for keyboard-centric workflows.}
 \end{tightItemList}
 
 \resumeProjectHeading
@@ -167,9 +168,9 @@
 \end{tightItemList}
 \resumeSubHeadingListEnd
 
-\vspace{-12pt}
+\vspace{-6pt}
 \section{Education}
-\vspace{-4pt}
+\vspace{-6pt}
 \resumeSubHeadingListStart
 \resumeSubheadingCollege
 {Gautam Buddha University}{Greater Noida, UP}
