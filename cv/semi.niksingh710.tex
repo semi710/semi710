@@ -1,4 +1,5 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
+\usepackage{charter}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -14,65 +15,68 @@
 \usepackage{ragged2e}
 
 \input{glyphtounicode}
-\setlength{\footskip}{4.08003pt}
+\setlength{\footskip}{4.35004pt}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Tighter margins for one-page fit
-\addtolength{\oddsidemargin}{-0.65in}
-\addtolength{\evensidemargin}{-0.65in}
-\addtolength{\textwidth}{1.3in}
-\addtolength{\topmargin}{-0.85in}
+% Relaxed margins for comfortable reading at 12pt
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.80in}
 \addtolength{\textheight}{1.7in}
 \urlstyle{same}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\linespread{1.04}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\normalsize
-}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+  \vspace{-4pt}\scshape\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 \pdfgentounicode=1
+\hyphenation{transactions documentation supporting ecosystem environments merchant management}
 
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item \small\justifying #1
 }
 \newcommand{\resumeSubheading}[4]{
-  \vspace{0pt}\item
+  \vspace{2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} $|$ \emph{#3} & #2 \\
-    \end{tabular*}\vspace{-2pt}
+    \end{tabular*}\vspace{0pt}
 }
 \newcommand{\resumeSubheadingCollege}[6]{
-  \vspace{-2pt}\item
+  \vspace{0pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
       \textit{\small#5} & \textit{\small #6} \\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-4pt}
 }
 \newcommand{\resumeProjectHeading}[2]{
-    \vspace{-2pt}\item
+    \vspace{0pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-3pt}
 }
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]\justifying}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
-\newenvironment{tightItemList}{\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]\justifying}{\end{itemize}\vspace{-8pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=1pt, partopsep=0pt, parsep=1pt, itemsep=1pt]\justifying}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newenvironment{tightItemList}{\begin{itemize}[topsep=1pt, partopsep=0pt, parsep=1pt, itemsep=1pt]\justifying}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
 \begin{center}
-\textbf{\Huge Nikhil Singh} \\ \vspace{4pt}
+\textbf{\huge Nikhil Singh} \\ \vspace{3pt}
+\small Backend \& Platform Engineer. Rust, Go, Nix, distributed systems, payment infrastructure, developer tooling. \\ \vspace{2pt}
 \small +91 9560324262 $|$ \href{mailto:hello@semi.sh}{\underline{hello@semi.sh}} $|$
 \href{https://linkedin.com/in/semi710}{\underline{linkedin.com/in/semi710}} $|$
 \href{https://github.com/semi710}{\underline{github.com/semi710}} $|$
@@ -80,101 +84,81 @@
 \end{center}
 \vspace{-18pt}
 
-\section{Skills}
-\vspace{-8pt}
-\setlength{\multicolsep}{0pt}
-\begin{multicols}{2}
-\begin{itemize}[leftmargin=0.15in, label={}, nosep, topsep=0pt, itemsep=0pt, parsep=0pt]
-\small{\raggedright\item{
-\textbf{Languages}{: Rust, Haskell, Go, Python, Nix (Flakes), SQL, Java, Bash} \\
-\textbf{Systems \& Infra}{: NixOS, Kubernetes, Docker, Linux, AWS, GCP, Jenkins, GitHub Actions} \\
-\textbf{Developer Tools}{: Git, Neovim/Nixvim, Tmux, QEMU, SSH}
-}}
-\end{itemize}
-
-\begin{itemize}[leftmargin=0.15in, label={}, nosep, topsep=0pt, itemsep=0pt, parsep=0pt]
-\small{\raggedright\item{
-\textbf{Datastores \& Messaging}{: PostgreSQL, ClickHouse, Kafka, Redis/Valkey} \\
-\textbf{AI Infrastructure}{: LLMs, MCP, LiteLLM, Embeddings, Vector Search, RAG} \\
-\textbf{Engineering Focus}{: Distributed systems, reproducible builds, AI infrastructure, developer tooling}
-}}
-\end{itemize}
-\end{multicols}
-\vspace{-10pt}
-
 \section{Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Product Engineer}{Jun 2025 -- Present}
 {Juspay Technologies}{Bengaluru, KA}
 \resumeItemListStart
-\resumeItem{Architected and engineered \textbf{Project Bernoulli}, a mission-critical Rust payment gateway bridging PSPs and client SDKs, processing 2M+ daily transactions at 99.99\% uptime with end-to-end ownership of backend, infrastructure, CI/CD, and production support.}
-\resumeItem{Designed a multi-cloud deployment architecture spanning \textbf{AWS} and \textbf{GCP} with independent Kubernetes clusters and databases per cloud, achieving zero-downtime failover and zero committed-transaction loss with sub-3-minute replication lag.}
-\resumeItem{Engineered high-throughput event pipelines using \textbf{Kafka} and \textbf{ClickHouse} for real-time payment analytics, with sub-millisecond SDK session caching via \textbf{Redis/Valkey}.}
-\resumeItem{Built the \textbf{UDIR} (Unified Dispute and Issue Resolution) refund pipeline, automating dispute handling and accelerating merchant refund lifecycles.}
-\resumeItem{Built a layered \textbf{Jenkins} CI pipeline with cached compiler, dev-shell, and dependency layers published to an \textbf{Attic} binary cache (including GHC 8 compiler caching), reducing developer bootstrap from 20--40 min to 2--5 min and cutting CI build times by 40--60\%; deployed a company-wide Nix devbox adopted by 800+ engineers.}
-\resumeItem{Designed the retrieval pipeline for \textbf{\href{https://github.com/juspay/juspay-mcp}{juspay-mcp}}, vectorizing merchant documentation via \textbf{LiteLLM} embeddings to replace keyword search with semantic retrieval, reducing LLM context size and latency for natural-language API integration.}
-\resumeItem{Resolved a production deployment blocked by a stuck \texttt{ALTER TABLE} migration; diagnosed stale PostgreSQL planner statistics via \texttt{pg\_stat\_activity} and \texttt{EXPLAIN ANALYZE}, restoring service by running \texttt{ANALYZE} to switch the planner to an index scan.}
-\resumeItem{Authored a custom GPG library in Rust with MDC payload support for secure cryptographic operations in payment flows.}
-\resumeItemListEnd
-
-\resumeSubheading
-{M.Tech Researcher -- Systems Engineering}{May 2023 -- May 2025}
-{Gautam Buddha University}{Greater Noida, UP}
-\resumeItemListStart
-\resumeItem{Authored IEEE paper on modular NixOS configurations for reproducible OS management (\href{https://ieeexplore.ieee.org/document/10991248}{IEEE Xplore}).}
-\resumeItem{Co-authored IEEE paper on ML-based heavy rainfall prediction for the Northern Himalayan region.}
-\resumeItem{Developed Nix flake-based configurations using disko and home-manager for hardware-agnostic deployments.}
+\resumeItem{Architected \textbf{Project Bernoulli}, a Rust payment gateway handling 2M+ daily transactions with 99.99\% uptime.}
+\resumeItem{Built UPI Mandate interoperability, Tap \& Pay, Contextual Payments (presented at GFF), and UAP.}
+\resumeItem{Helped adopt active-active cell architecture across AWS and GCP with per-cloud Kubernetes clusters, enabling zero-downtime failover with sub-3-minute replication lag.}
+\resumeItem{Migrated \textbf{ProcessTracker}, a Haskell scheduler with custom retries and interoperable Kafka/Redis queues, from Stack to Nix flakes with reproducible builds and cached CI.}
+\resumeItem{Engineered layered Jenkins CI, cutting bootstrap from 20--40 min to 2--5 min and builds by 40--60\%; deployed a Nix devbox adopted by 800+ engineers.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Linux Systems Intern}{2023 -- 2024}
 {Decet Technology}{Remote \& Greater Noida}
 \resumeItemListStart
-\resumeItem{Slashed deployment times from 2+ hours to under 5 minutes by engineering a custom Go-based CI/CD infrastructure, directly accelerating the backend release cycle.}
-\resumeItem{Built core Python backend services handling 10k+ daily requests with REST APIs and database integrations.}
+\resumeItem{Slashed deployment times from 2+ hours to under 5 minutes by engineering a Go-based CI/CD system.}
+\resumeItem{Built Python backend services handling 10K+ daily requests with REST APIs and database integrations.}
 \resumeItemListEnd
 
 \resumeSubheading
-{Package Maintainer -- NixOS (nixpkgs) \& Arch Linux}{2020 -- Present}
-{NixOS \& Arch Communities}{Remote}
+{Nixpkgs Maintainer \& Open Source Contributor}{2023 -- Present}
+{NixOS \& nix-community}{Remote}
 \resumeItemListStart
-\resumeItem{Upstreamed a highly adopted module to \texttt{home-manager}, enabling declarative user environment configurations for a large segment of the Nix community.}
-\resumeItem{Maintain multiple open-source Nix flake projects and 15+ packages across \texttt{nixpkgs} and the AUR with 50k+ combined downloads; host and manage a custom binary cache.}
-\resumeItem{Contributed 10+ upstream fixes to core ecosystem projects including NixOS and Hyprwm.}
+\resumeItem{Registered nixpkgs maintainer of 3 packages with 18 merged PRs across nixpkgs, home-manager, nixvim, and hyprwm/contrib.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-\vspace{-12pt}
+\vspace{-8pt}
 \section{Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Ndots} $|$ \emph{NixOS System Configuration (100+ Stars)}}{2024 -- Present}
+{\textbf{\href{https://github.com/semi710/ndots}{Ndots}} $|$ \emph{NixOS System Configuration (116+ Stars)}}{2024 -- Present}
 \begin{tightItemList}
-\resumeItem{Modular NixOS flake orchestrating reproducible configurations across multiple personal and organizational systems, supporting diverse machine architectures.}
-\resumeItem{Automated deployment pipelines integrating \texttt{sops} for secure secret management, reducing system setup time from days to under 30 minutes with full rollback capability.}
+\resumeItem{Modular multi-host NixOS/nix-darwin flake with centralized user/SSH management and reusable, auto-wired modules.}
+\resumeItem{Automated remote provisioning with nixos-anywhere and CI-built x86\_64/aarch64 installer ISOs.}
 \end{tightItemList}
 
 \resumeProjectHeading
-{\textbf{Nvix} $|$ \emph{Nixvim/Neovim Distribution for Terminal Users}}{2024 -- Present}
+{\textbf{\href{https://github.com/semi710/nvix}{Nvix}} $|$ \emph{Nixvim/Neovim Distribution (173+ Stars, 42+ Forks)}}{2024 -- Present}
 \begin{tightItemList}
-\resumeItem{Maintained a high-performance Nixvim configuration with modular LSP/DAP/Treesitter plugin architecture supporting 20+ languages at sub-50ms startup, optimized for keyboard-centric workflows.}
-\end{tightItemList}
-
-\resumeProjectHeading
-{\textbf{Tmux Minimal Status} $|$ \emph{Terminal UI, Open Source}}{2020 -- Present}
-\begin{tightItemList}
-\resumeItem{Maintainer of popular tmux status bar (240+ GitHub stars); optimized for minimal resource footprint in high-frequency terminal environments.}
+\resumeItem{Modular Nixvim distribution offering bare, core, and full variants for different workflows.}
+\resumeItem{Auto-discovered plugin modules can be cherry-picked, extended, or consumed independently.}
 \end{tightItemList}
 \resumeSubHeadingListEnd
 
 \vspace{-6pt}
-\section{Education}
-\vspace{-6pt}
+\section{Skills \& Open Source}
+\vspace{-4pt}
+\begin{itemize}[leftmargin=0.15in, label={}, nosep, topsep=0pt, itemsep=0pt, parsep=0pt]
+\small{\item{
+\textbf{Languages}{: Rust, Go, Python, Haskell, SQL, Bash} \\
+\textbf{Infrastructure}{: Kubernetes, Docker, AWS, GCP, Kafka, ClickHouse, PostgreSQL, Redis, CI/CD} \\
+\textbf{Nix/Linux}{: Nix/NixOS, nixpkgs, flakes, Home Manager, overlays, modules, sops-nix, Linux} \\
+\textbf{Open Source}{: Member of \href{https://github.com/NixOS}{NixOS}, \href{https://github.com/nix-community}{nix-community}, \href{https://github.com/nixos-asia}{nixos-asia}}
+}}
+\end{itemize}
+\vspace{-8pt}
+
+\section{Education \& Publications}
+\vspace{-4pt}
 \resumeSubHeadingListStart
 \resumeSubheadingCollege
 {Gautam Buddha University}{Greater Noida, UP}
 {Master of Technology in Software Engineering \textbf{(CGPA: 8.83)}}{Aug 2023 -- May 2025}
 {Bachelor of Technology in Computer Science Engineering}{Aug 2020 -- Aug 2023}
 \resumeSubHeadingListEnd
+\vspace{-2pt}
+\begin{itemize}[leftmargin=0.15in, label={}, nosep, topsep=0pt, itemsep=0pt, parsep=0pt]
+\small{\item{
+\textbf{Publications}{:} \\
+\href{https://ieeexplore.ieee.org/document/10991248}{``Modularity and Lazy Evaluation in NixOS: A Functional Approach to Operating System Configuration,''} IEEE. \\
+``ML-based Heavy Rainfall Prediction for the Northern Himalayan Region,'' IEEE (co-authored).
+}}
+\end{itemize}
+
 \end{document}
